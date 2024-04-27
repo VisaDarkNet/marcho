@@ -10,3 +10,11 @@ body {
   margin: 0 auto;
   padding: 0 15px;
 }
+
+.menu__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  border: 50px;
+}
