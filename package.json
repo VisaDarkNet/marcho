@@ -1,11 +1,13 @@
 {
   "dependencies": {
+    "@fancyapps/ui": "^5.0.36",
     "gulp": "^4.0.2"
   },
   "name": "start_gulp",
   "version": "1.0.0",
   "main": "index.js",
   "devDependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
     "browser-sync": "^3.0.2",
     "del": "^6.0.0",
     "gulp-autoprefixer": "^6.1.0",
