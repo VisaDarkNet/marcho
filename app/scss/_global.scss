@@ -30,6 +30,10 @@ a {
   @extend %quicksand-500;
 }
 
+.section {
+  padding: 60px 0;
+}
+
 .title {
   text-align: center;
   @extend %roboto-700;
