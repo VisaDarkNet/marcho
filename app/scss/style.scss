@@ -2027,6 +2027,170 @@
   }
 }
 
+.blog-one {
+
+  &__title {
+    text-transform: uppercase;
+    font-size: 24px;
+    @extend %roboto-700;
+
+    &::before {
+      background-color: transparent;
+    }
+  }
+
+  blockquote {
+    margin-bottom: 35px;
+    background-color: #ececec;
+    border-left: 3px solid $accent;
+    padding: 35px;
+    font-size: 22px;
+    color: $title;
+    @extend %roboto-400;
+    line-height: 1.5;
+  }
+
+  &__left-img {
+    float: left;
+    margin-right: 25px;
+    margin-bottom: 10px;
+  }
+
+  &__right-img {
+    float: right;
+    margin-left: 30px;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    border: 1px solid #ececec;
+    border-top: none;
+    padding: 30px;
+    margin-top: -1px;
+    margin-bottom: 30px;
+
+    h4 {
+      color: $title;
+      margin-bottom: 30px;
+      font-size: 22px;
+      @extend %roboto-700;
+    }
+
+    p:not(:last-child) {
+      margin-bottom: 35px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    margin-bottom: 30px;
+  }
+
+  &__info-link {
+    margin-right: 30px;
+    padding-left: 28px;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 16px;
+      height: 16px;
+    }
+
+    &--calendary::before {
+      background-image: url('../images/icons/calendar.svg');
+    }
+
+    &--comment::before {
+      background-image: url('../images/icons/comment.svg');
+    }
+
+    &--user::before {
+      background-image: url('../images/icons/user-red.svg');
+    }
+
+  }
+
+  &__share {
+    display: flex;
+    gap: 15px;
+  }
+
+  &__share-link {
+    display: flex;
+    align-items: center;
+
+
+    path {
+      fill: #8d8d8d;
+    }
+
+    &:hover {
+      path {
+        fill: $accent;
+      }
+    }
+  }
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+
+    span {
+      color: $title;
+      text-transform: uppercase;
+
+    }
+  }
+
+  .comments-form {
+    border-bottom: none;
+  }
+
+  &__author {
+    display: flex;
+    gap: 30px;
+    border-bottom: 1px solid #ececec;
+    margin-bottom: 40px;
+  }
+
+  &__author-img {
+    margin-bottom: 40px;
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+  }
+
+  &__author-name {
+    color: $title;
+    font-size: 22px;
+    margin-bottom: 20px;
+    @extend %roboto-700;
+  }
+
+  &__comments-title {
+    color: $title;
+    font-size: 22px;
+    margin-bottom: 20px;
+    @extend %roboto-700;
+  }
+
+  &__comments {
+    border-bottom: 1px solid #ececec;
+    margin-bottom: 40px;
+  }
+
+
+  .comments-form__text-input {
+    max-width: 370px;
+  }
+}
+
 
 
 
