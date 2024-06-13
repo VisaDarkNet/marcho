@@ -29,7 +29,6 @@ function nunjucks() {
 function styles() {
   return src('app/scss/*.scss')
     .pipe(scss({ outputStyle: 'compressed' }))
-    // .pipe(concat())
     .pipe(rename({
       suffix : '.min'
     }))

@@ -57,6 +57,7 @@ a {
   justify-content: center;
   padding-left: 25px;
   position: relative;
+  flex-wrap: wrap;
 
   &::before {
     content: "";
@@ -153,5 +154,19 @@ a {
       transform: rotate(180deg);
       right: 0;
     }
+  }
+}
+
+@media (max-width:620px) {
+  .title {
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+
+@media (max-width:400px) {
+  .title {
+    font-size: 32px;
+    line-height: 40px;
   }
 }
