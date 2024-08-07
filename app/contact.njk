@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/contact.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  {% include 'app/module/_header/_header.html' %}
+
+
+  <main class="main">
+
+  {% include 'app/module/_top/_top.html' %}
+
+
+    <section class="map section">
+      <div class="container">
+        <div class="maps">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2441.2641418628486!2d76.9892371!3d52.2749064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42f9cb229fb08193%3A0xe2b02ee98ec6f52f!2z0YPQuy4g0JrQsNC80LfQuNC90LAgNjcvMSwg0J_QsNCy0LvQvtC00LDRgCAxNDAwMDA!5e0!3m2!1sru!2skz!4v1628236423579!5m2!1sru!2skz"
+            style="border:0;" allowfullscreen="" loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-us">
+      <div class="container">
+        <div class="contact-us__inner">
+          <div class="contact-us__info">
+            <h3 class="contact-us__title">
+              Feel Free Don’t Hesitate To Contact With Us
+            </h3>
+            <p class="contact-us__text">
+              Lorem ipsum dolor sit amet, consectetur adingn elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo maecnaacnrao cumsan lacus vel
+              facilisis.
+            </p>
+            <ul class="contact-us__list">
+              <li class="contact-us__item contact-us__item--phone">
+                <a class="contact-us__phone" href="tel:+01234567896">+0-123-456-7896</a>
+                <a class="contact-us__phone" href="tel:+01234567896"> +0-123-456-7896</a>
+              </li>
+              <li class="contact-us__item contact-us__item--location">
+                <a class="contact-us__address" href="#" target="_blank" rel="noopener noreferrer">
+                  Ranlon Market 789 Road,<br>
+                  Market Street, Newyork
+                </a>
+              </li>
+              <li class="contact-us__item contact-us__item--email">
+                <a class="contact-us__email" href="mailto:@yourmailaddress@gmail.com">yourmailaddress@gmail.com</a>
+                <a class="contact-us__email" href="mailto:@companymail@gmail.com">companymail@gmail.com</a>
+              </li>
+            </ul>
+          </div>
+
+          <form class="contact-us__form" action="#">
+
+              <p class="contact-us__form-title">
+                Contact Form
+              </p>
+              <div class="contact-us__form-box">
+                <input class="contact-us__form-input" type="text" placeholder="Your Name">
+                <input class="contact-us__form-input" type="text" placeholder="Your E-mail Address">
+              </div>
+              <input class="contact-us__form-input" type="text" placeholder="Subject">
+              <textarea class="contact-us__form-textarea" placeholder="Message here"></textarea>
+              <button class="contact-us__form-btn" type="submit">SEND MESSAGE</button>
+
+          </form>
+
+
+        </div>
+      </div>
+
+    </section>
+
+
+
+
+  </main>
+
+  {% include 'app/module/_footer/_footer.html' %}
+
+  <script src="js/main.min.js">
+  </script>
+</body>
+
+</html>
